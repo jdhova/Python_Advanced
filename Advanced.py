@@ -3,10 +3,17 @@ print(list)
 
 mysets = set(list)
 print(mysets)
-mysets.add('Grace')
+mysets.update(['Grace','Grace'])
 print((mysets))
-mysets.add('Grace')
-print(mysets)
+
+frozen = frozenset(mysets)
+print('My frozen sets is',frozen)
+
+frozen.add('yellow')
+frozen.update(['yellow','Black'])
+# print(seto)
+
+
 
 
 
