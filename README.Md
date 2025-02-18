@@ -24,4 +24,23 @@ frozen.update(['yellow','Black'])  --error Frozen does not allow updates.
 
 
 ```
+#### Joining Sets
+```
+africa ={'Nigeria','Ghana','Senegal','Dubai'}
+
+Americas= {'USA','Canada','Mexico','Dubai'}
+
+common = africa & Americas
+print(common)
+
+print('All Values :',africa | Americas)
+print('All Values :',africa.union(Americas))
+print('Remove Common Values',africa-Americas)
+
+```
+
+
+
+
+
 
