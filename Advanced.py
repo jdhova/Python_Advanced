@@ -1,14 +1,44 @@
 
-africa ={'Nigeria','Ghana','Senegal','Dubai'}
 
-Americas= {'USA','Canada','Mexico','Dubai'}
+age = [2,4,6,8,30]
+names = ['James','Adam','David','Kate','Yellow','Red']
 
-common = africa & Americas
-print(common)
+# print(tuple(zip(age,names)))
+new_dict = {names[i]:age[i] for i in range(len(age))}
+print(new_dict)
 
-print('All Values :',africa | Americas)
-print('All Values :',africa.union(Americas))
-print('Remove Common Values',africa-Americas)
+val1 = [2,43,60,82,300,2]
+val2 = [22,4,3,2,3,32]
+
+print(tuple(zip(val1,val2)))
+
+val3 = [a/b if a > b else 'Impossible' for a,b in (zip(val1,val2))]
+print(val3)
+
+
+
+
+
+
+
+
+# numbers = [2,4,6,8,10]
+#
+# adds = [n*3 for n in numbers]
+# print(adds)
+
+
+
+# africa ={'Nigeria','Ghana','Senegal','Dubai'}
+#
+# Americas= {'USA','Canada','Mexico','Dubai'}
+#
+# common = africa & Americas
+# print(common)
+#
+# print('All Values :',africa | Americas)
+# print('All Values :',africa.union(Americas))
+# print('Remove Common Values',africa-Americas)
 
 
 
